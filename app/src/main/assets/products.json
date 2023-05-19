@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "estado": 3,
+    "tipo": "Expreso",
+    "total": "15000.00",
+    "pendiente": "5000.00",
+    "solicitado_el":"18/09/2022"
+  },
+  {
+    "id": 2,
+    "estado": 1,
+    "tipo": "Prestamo",
+    "total": "3000000.00",
+    "pendiente": "0.00",
+    "solicitado_el":"18/09/2022"
+  },
+  {
+    "id": 3,
+    "estado": 2,
+    "tipo": "Hipoteca",
+    "total": "1500000.00",
+    "pendiente": "0.00",
+    "solicitado_el":"18/09/2022"
+  }
+]

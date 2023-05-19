@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_white"
+    tools:context=".AhorrosActivity">
+
+    <RelativeLayout
+        android:id="@+id/Ahorrosheader"
+        android:background="@drawable/layout_gradient_teal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <RelativeLayout
+            android:id="@+id/AhorrosheaderContent"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <TextView
+                android:id="@+id/tvTipoCuenta"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="Cuenta de Ahorros"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tvAhorrosMonto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTipoCuenta"
+                android:layout_centerInParent="true"
+                android:text="1,000,000"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tvAhorrosNoCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAhorrosMonto"
+                android:layout_centerInParent="true"
+                android:text="Cuenta No. 180994"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llMensualidad"
+                android:orientation="horizontal"
+                android:layout_below="@id/tvAhorrosNoCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="@string/gastosMes"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:text="15,000"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:id="@+id/tvValorGasto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="@string/ahorrosMes"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text="20,000"
+                        android:id="@+id/tvValorAhorros"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMovimientos"
+        android:background="@drawable/layout_rounded_white"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/llMensualidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="NotSibling">
+
+        <LinearLayout
+            android:id="@+id/ahorrosMovimientos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="Movimientos"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/rounded_buttom_border"
+                android:text="Ver Mas"
+                android:textColor="@color/teal_500"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lstMovimientosLite"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@id/ahorrosMovimientos"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:scrollbarThumbVertical="@color/teal_500" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/productHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlMovimientos"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_credit_card_teal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="Mis Productos"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:textStyle="bold"
+            android:textColor="@color/teal_500"
+            android:background="@drawable/rounded_buttom_border"
+            android:layout_weight="1.5"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:text="Ver Mas"
+            android:layout_height="30dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlProducts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/Ahorrosfooter"
+        android:layout_below="@id/productHeader"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lstProductos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarThumbHorizontal="@drawable/recyclerviewscrollcolor"
+            android:scrollbars="horizontal" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Ahorrosfooter"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgAhorroPrestamos"
+                android:src="@drawable/ic_pagos"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/teal_500"
+                android:textAlignment="center"
+                android:text="@string/prestamos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgAhorroHome"
+                android:src="@drawable/ic_portafolio"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/teal_500"
+                android:textAlignment="center"
+                android:text="@string/inicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/ic_ahorros"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/teal_500"
+                android:textAlignment="center"
+                android:text="@string/ahorros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_white"
+    tools:context=".AhorrosActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/lyFAQSearchBar"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/rounded_edittext"
+            android:layout_height="32dp"
+            android:padding="5dp"
+            android:drawableEnd="@drawable/ic_baseline_search_24"
+            android:layout_width="match_parent"
+            android:hint="@string/searchBar"
+            android:id="@+id/FAQSearchBar"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/lyFAQSearchBar"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/FAQheader"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/layout_rounded_gradient_teal">
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:text="@string/faq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:src="@drawable/ic_faq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@drawable/layout_rounded_white"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:layout_below="@id/FAQheader"
+        android:layout_above="@id/FAQfooter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lstFAQ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="3dp"
+            android:scrollbarThumbVertical="@drawable/recyclerviewscrollcolor" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/FAQfooter"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgFAQPrestamo"
+                android:src="@drawable/ic_pagos"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/teal_500"
+                android:textAlignment="center"
+                android:text="@string/prestamos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgFAQHome"
+                android:src="@drawable/ic_portafolio"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/teal_500"
+                android:textAlignment="center"
+                android:text="@string/inicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgFAQAhorros"
+                android:src="@drawable/ic_ahorros"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/teal_500"
+                android:textAlignment="center"
+                android:text="@string/ahorros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/flFAQContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

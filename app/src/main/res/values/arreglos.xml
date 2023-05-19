@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrIdentification">
+        <item>Cedula de Identidad</item>
+        <item>Codigo de Socio</item>
+    </string-array>
+
+    <string-array name="arrPrestamos">
+        <item>Enseres</item>
+        <item>Enseres Especiales</item>
+        <item>Expreso</item>
+        <item>Farmacia</item>
+        <item>Gerencial</item>
+        <item>Hipotecario</item>
+        <item>Hoteles</item>
+        <item>Normal</item>
+        <item>Supermercado</item>
+        <item>Viajes</item>
+    </string-array>
+</resources>

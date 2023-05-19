@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "titulo": "¿Como Puedo Ser Parte De La Cooperativa?",
+    "contenido": "1. Ser miembro del Poder Judicial, (nombrado).\n\n2. Ahorrar mensualmente un mínimo de tres por ciento (3%) del salario bruto.\n\n3. Pagar una cuota de admisión de 0.5% del sueldo bruto, la cual no es reembolsable.\n\n4. Adquirir un mínimo de dos (2) certificados de aportación, con valor de cien pesos, (RD$100.00), cada uno.\n\n5. Remitir al correo recepcion@coopnaseju.com, los formularios de solicitud de inscripción, autorización de descuento y ayuda mutua con los datos debidamente completados y firmados, (podrá encontrar los formularios en nuestra página web www.coopnaseju.com.do).",
+    "creado_el":"18/09/2022"
+  },
+  {
+    "id": 2,
+    "titulo": "¿Como Puedo Solicitar Un Préstamo?",
+    "contenido": "Luego de pertenecer durante 6 meses a Coopnaseju, debe llenar el formulario de solicitud de préstamo y remitirlo, junto a copia de cédula al correo recepcion@coopnaseju.com. (podrá encontrar los formularios en nuestra página web www.coopnaseju.com.do).",
+    "creado_el":"18/09/2022"
+  },
+  {
+    "id": 3,
+    "titulo": "¿Como Puedo Ser Parte De La Cooperativa?",
+    "contenido": "Luego de cumplir con los requisitos mínimos descritos anteriormente, estos son los tipos de préstamos en base a los aportes:\n\n1. Préstamo expreso:\n-RD$15,000 para socios con salario entre RD$5,000 a RD$30,000.\n-RD$25,000 para socios con salario entre RD$30,001 a RD$50,000.\n-RD$40,000 para socios con salario entre RD$50,001 a RD$80,000.\n-RD$50,000 para socios con salario de RD$80,001 en adelante.\n\n2. Préstamo gerencial (Este es igual al monto ahorrado a la fecha).\n3. Préstamo normal (Hasta tres veces la cantidad ahorrada a la fecha).\n4. Préstamos con garantía hipotecaria, (Detallado en la pestaña servicios).\n5. Ordenes de compra, (Enseres, electrodomésticos, supermercado, etc).",
+    "creado_el":"18/09/2022"
+  },
+  {
+    "id": 4,
+    "titulo": "¿Como Puedo Consultar Mi Cuenta?",
+    "contenido": "Contamos con varios canales para poder consultar sus transacciones:\n\n1. Vía nuestra página web, haciendo click en la pestaña Consulta Socio.\n2. Descargando en instalando nuestra app disponible en google play.\n3. A través de nuestro servicio de voz en el 809-221-1124 opción 1.",
+    "creado_el":"18/09/2022"
+  },
+  {
+    "id": 5,
+    "titulo": "No Recuerdo Mis Datos Para Ingresar Al Sistema, ¿Que Hago?",
+    "contenido": "Puede comunicarse al Departamento de Técnologia al número 809-221-1124 ext. 109 y recibirá asistencia.",
+    "creado_el":"18/09/2022"
+  }
+]

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/layout_rounded_white"
+    android:layout_height="wrap_content"
+    android:textStyle="bold">
+
+    <ImageView
+        android:src="@drawable/ic_baseline_request_quote_24"
+        android:id="@+id/prestamoIcon"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="81dp"
+        android:layout_height="81dp"/>
+
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/prestamoHeader"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/prestamoFecha"
+                android:textColor="@color/black"
+                android:text="Fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:background="@drawable/prestamo_solicitado"
+                android:layout_alignParentEnd="true"
+                android:paddingStart="15dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/white"
+                android:id="@+id/prestamoEstado"
+                android:textStyle="bold"
+                android:text="Estado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/prestamoTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prestamoHeader"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Titulo"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_below="@id/prestamoTitulo"
+            android:id="@+id/prestamoMonto"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"
+            android:text="Monto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
